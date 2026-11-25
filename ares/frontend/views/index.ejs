@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Data</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #121826;
+            color: white;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .data-box {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            overflow-x: auto;
+        }
+
+        pre {
+            color: #a7f3d0;
+            font-size: 15px;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Data From Flask Backend</h1>
+
+        <div class="data-box">
+            <pre><%= JSON.stringify(data, null, 2) %></pre>
+        </div>
+
+        <div class="footer">
+            Connected to Flask Backend
+        </div>
+
+    </div>
+
+</body>
+</html>
