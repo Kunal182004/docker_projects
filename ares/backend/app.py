@@ -1,4 +1,4 @@
-from flask import Flask,jsonify,request
+from flask import Flask,jsonify,request,render_template
 from bussiness import fetching_data
 
 
@@ -9,9 +9,7 @@ app= Flask(__name__)
 @app.route("/")
 
 def homepage():
-    return("welcome to my homepage")
-
-
+    return render_template("indexx.html")
 
 @app.route("/api")
 
